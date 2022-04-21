@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-.form-names {
-    padding: 11px 0;
-}
-
 p {
     margin: 10px 0;
 }
@@ -22,7 +18,7 @@ input {
     width: 100%;
 }
 
-.form-container {
+.form_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +26,11 @@ input {
     margin: 0 auto;
 }
 
-.button-placement {
+.form_names {
+    padding: 11px 0;
+}
+
+.button_placement {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ input {
     padding: 0;
 }
 
-.error-msg {
+.error_msg {
     color: red;
     font-size: 0.7em;
 }

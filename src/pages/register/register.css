@@ -1,0 +1,51 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 10px 0;
+}
+
+form {
+    width: clamp(180px, 50%, 300px);
+}
+
+input {
+    border-radius: 20px;
+    height: 3em;
+    padding: 15px;
+    border: 1px solid grey;
+    width: 100%;
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    margin: 0 auto;
+}
+
+.form_names {
+    padding: 11px 0;
+}
+
+.button_placement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button {
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.error_msg {
+    color: red;
+    font-size: 0.7em;
+}

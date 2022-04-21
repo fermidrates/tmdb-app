@@ -73,9 +73,9 @@ const Login = () => {
   };
 
   return (
-    <div className="form-container">
-      <form id="login-form" onSubmit={(event) => checkLoginAttempt(event)}>
-        <div className="form-names">Username</div>
+    <div className="form_container">
+      <form id="login_form" onSubmit={(event) => checkLoginAttempt(event)}>
+        <div className="form_names">Username</div>
         <input
           type="text"
           placeholder="Your username here"
@@ -84,12 +84,12 @@ const Login = () => {
         />
         <div>
           {errors.username ? (
-            <p className="error-msg">{errors.username}</p>
+            <p className="error_msg">{errors.username}</p>
           ) : (
             <></>
           )}
         </div>
-        <div className="form-names">Password</div>
+        <div className="form_names">Password</div>
         <input
           type="password"
           placeholder="Your password here"
@@ -98,12 +98,12 @@ const Login = () => {
         />
         <div>
           {errors.password ? (
-            <p className="error-msg">{errors.password}</p>
+            <p className="error_msg">{errors.password}</p>
           ) : (
             <></>
           )}
         </div>
-        <div className="button-placement">
+        <div className="button_placement">
           <input
             className="button"
             type="submit"

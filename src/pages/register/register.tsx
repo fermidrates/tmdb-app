@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./register.css";
 
 export type Error = {
   username: string;
@@ -60,9 +61,9 @@ const Register = () => {
   };
 
   return (
-    <div className="form-container">
-      <form id="login-form" onSubmit={(event) => checkRegisterAttempt(event)}>
-        <div className="form-names">Username</div>
+    <div className="form_container">
+      <form id="login_form" onSubmit={(event) => checkRegisterAttempt(event)}>
+        <div className="form_names">Username</div>
         <input
           type="text"
           placeholder="Your username here"
@@ -71,12 +72,12 @@ const Register = () => {
         />
         <div>
           {errors.username ? (
-            <p className="error-msg">{errors.username}</p>
+            <p className="error_msg">{errors.username}</p>
           ) : (
             <></>
           )}
         </div>
-        <div className="form-names">Password</div>
+        <div className="form_names">Password</div>
         <input
           type="password"
           placeholder="Your password here"
@@ -85,12 +86,12 @@ const Register = () => {
         />
         <div>
           {errors.password ? (
-            <p className="error-msg">{errors.password}</p>
+            <p className="error_msg">{errors.password}</p>
           ) : (
             <></>
           )}
         </div>
-        <div className="button-placement">
+        <div className="button_placement">
           <input
             className="button"
             type="submit"
