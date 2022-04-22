@@ -100,6 +100,12 @@ const Register = () => {
           />
         </div>
       </form>
+      <div className="redirect_msg">
+        Already have an account? Login{" "}
+        <button className="button_login" onClick={() => navigate("/")}>
+          here
+        </button>
+      </div>
     </div>
   );
 };

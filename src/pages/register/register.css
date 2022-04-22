@@ -38,6 +38,14 @@ input {
     width: 100%;
 }
 
+.button_login {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: fit-content;
+    color: blue;
+}
+
 .button {
     height: 2.5em;
     display: flex;
@@ -48,4 +56,9 @@ input {
 .error_msg {
     color: red;
     font-size: 0.7em;
+}
+
+.redirect_msg {
+    font-size: 0.9em;
+    margin-top: 3em;
 }
